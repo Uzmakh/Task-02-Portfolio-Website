@@ -1,0 +1,128 @@
+#mainNav i {
+  display: none;
+}
+
+@media (max-width: 740px) {
+  #mainNav i {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  #mainNav .logo {
+    width: 5rem;
+  }
+
+  #mainNav ul {
+    background: #cf9b82;
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  #mainNav ul li {}
+
+  #mainNav i {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+  }
+
+  .sub-title {
+    font-size: 4rem;
+  }
+
+  header {
+    margin-top: 3rem;
+
+    background-size: contain;
+
+    background-position: center;
+  }
+
+  header .header-text {
+    margin-top: 40rem;
+    line-height: 1;
+  }
+
+  #about {
+    padding-top: 2rem;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+
+  .about-col-1 {
+    margin-bottom: 3rem;
+  }
+
+
+
+  header .header-text {
+    margin-top: 38rem;
+    line-height: 0.8;
+  }
+
+  .header-text span {
+    color: var(--dark-red);
+  }
+
+  .tab-titles .tab-links {
+    font-size: 1.4rem;
+    /* font-weight: 700; */
+    margin-right: 25px;
+  }
+
+  #services {
+    padding-top: -10px;
+  }
+
+  #services .sub-title,
+  #portfolio .sub-title {
+    margin-bottom: 6rem;
+  }
+
+  .services-list div {
+    flex-basis: 100%;
+  }
+
+  .work-list .work {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .contact-col-1,
+  .contact-col-2 {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 998px) {
+  nav .logo {
+    width: 8rem;
+  }
+
+  .header-text {
+    margin-top: 30%;
+  }
+
+  .header-text h1 {
+    margin-top: 20px;
+    font-size: 4rem;
+  }
+
+  .header-text p {
+    font-size: 2.5rem;
+  }
+}
