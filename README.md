@@ -18,7 +18,7 @@ This portfolio website showcases my work, skills, and provides a contact form th
 
 # Setup Instructions
 1. Clone the Repository
-> git clone https://github.com/your-username/portfolio-website.git
+> git clone https://github.com/Uzmakh/Task-02-Portfolio-Website.git
 > 
 > cd portfolio-website
 2. Google Sheets Integration Setup
