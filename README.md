@@ -30,22 +30,22 @@ Replace the default code with:
 > const sheetName = 'Sheet1'
 const scriptProp = PropertiesService.getScriptProperties()
 
-function doPost(e) {
+> function doPost(e) {
   const lock = LockService.getScriptLock()
   lock.tryLock(10000)
 
-  try {
+ > try {
     const doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
     const sheet = doc.getSheetByName(sheetName)
     const headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
     const nextRow = sheet.getLastRow() + 1
     const newRow = headers.map(header => e.parameter[header])
 
-    sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+   > sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
     return ContentService
       .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
       .setMimeType(ContentService.MimeType.JSON)
-  } catch (e) {
+ > } catch (e) {
     return ContentService
       .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
       .setMimeType(ContentService.MimeType.JSON)
@@ -54,7 +54,7 @@ function doPost(e) {
   }
 }
 
-function setup() {
+> function setup() {
   const doc = SpreadsheetApp.getActiveSpreadsheet()
   scriptProp.setProperty('key', doc.getId())
 }
@@ -75,15 +75,15 @@ Edit the following files to personalize:
 - assets/: Add your profile image and project screenshots
 
   # File Structure
-  portfolio-website/
-├── index.html
-├── styles.css
-├── script.js
-├── assets/
-│   ├── profile.jpg
-│   ├── project-1.jpg
-│   └── project-2.jpg
-├── LICENSE
+  portfolio-website/  
+├── index.html  
+├── styles.css\
+├── script.js\
+├── assets/\
+│   ├── profile.jpg\
+│   ├── project-1.jpg\
+│   └── project-2.jpg\
+├── LICENSE\
 └── README.md
 # Usage
 1. Open index.html in any modern browser
@@ -100,8 +100,8 @@ Edit the following files to personalize:
 - Google Sheets integration via Apps Script
 - Font Awesome for icons
 - Google Fonts for typography
-## Live Demo: https://your-portfolio-website.com
-## Contact: your.email@example.com
+### Live Demo: https://your-portfolio-website.com
+### Contact: your.email@example.com
   
 
  
