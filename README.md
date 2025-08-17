@@ -26,5 +26,5 @@ Create a new Google Sheet
 
 Go to Extensions > Apps Script
 
-Replace the default code with:
+Replace the default code with: (continued...)
  
